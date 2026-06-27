@@ -164,6 +164,106 @@ module.exports = {
       "slug": "hilleroed",
       "name": "Hillerød",
       "area": "Hillerød, Allerød og Birkerød"
+    },
+    {
+      "name": "Østerbro",
+      "slug": "oesterbro",
+      "area": "Østerbro, København"
+    },
+    {
+      "name": "Nørrebro",
+      "slug": "noerrebro",
+      "area": "Nørrebro, København"
+    },
+    {
+      "name": "Vesterbro",
+      "slug": "vesterbro",
+      "area": "Vesterbro, København"
+    },
+    {
+      "name": "Amager",
+      "slug": "amager",
+      "area": "Amager, København"
+    },
+    {
+      "name": "Valby",
+      "slug": "valby",
+      "area": "Valby, København"
+    },
+    {
+      "name": "Vanløse",
+      "slug": "vanloese",
+      "area": "Vanløse, København"
+    },
+    {
+      "name": "Brønshøj",
+      "slug": "broenshoej",
+      "area": "Brønshøj, København"
+    },
+    {
+      "name": "Charlottenlund",
+      "slug": "charlottenlund",
+      "area": "Charlottenlund, Gentofte"
+    },
+    {
+      "name": "Klampenborg",
+      "slug": "klampenborg",
+      "area": "Klampenborg, Gentofte"
+    },
+    {
+      "name": "Holte",
+      "slug": "holte",
+      "area": "Holte, Rudersdal"
+    },
+    {
+      "name": "Virum",
+      "slug": "virum",
+      "area": "Virum, Lyngby-Taarbæk"
+    },
+    {
+      "name": "Ballerup",
+      "slug": "ballerup",
+      "area": "Ballerup"
+    },
+    {
+      "name": "Glostrup",
+      "slug": "glostrup",
+      "area": "Glostrup"
+    },
+    {
+      "name": "Brøndby",
+      "slug": "broendby",
+      "area": "Brøndby"
+    },
+    {
+      "name": "Taastrup",
+      "slug": "taastrup",
+      "area": "Høje-Taastrup"
+    },
+    {
+      "name": "Albertslund",
+      "slug": "albertslund",
+      "area": "Albertslund"
+    },
+    {
+      "name": "Greve",
+      "slug": "greve",
+      "area": "Greve"
+    },
+    {
+      "name": "Køge",
+      "slug": "koege",
+      "area": "Køge"
+    },
+    {
+      "name": "Solrød",
+      "slug": "solroed",
+      "area": "Solrød Strand"
+    },
+    {
+      "name": "Ishøj",
+      "slug": "ishoej",
+      "area": "Ishøj"
     }
   ],
   "references": [
