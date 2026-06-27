@@ -1,0 +1,13 @@
+{
+  "name": "hk-gulventreprise",
+  "version": "1.0.0",
+  "description": "H&K Gulventreprise hjemmeside",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && npx serve public -l 3000"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "multer": "^2.2.0"
+  }
+}
