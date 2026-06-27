@@ -6,7 +6,7 @@ module.exports = {
     "phone": "+4530284796",
     "phoneDisplay": "+45 30 28 47 96",
     "email": "info@hkgulve.dk",
-    "domain": "https://www.hk-gulv.dk",
+    "domain": "https://www.hkgulve.dk",
     "cvr": "DK12345678",
     "address": "Storkøbenhavn, Danmark",
     "area": "Storkøbenhavn & hele Sjælland",
