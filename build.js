@@ -563,7 +563,7 @@ function genContact() {
         </div>
         <div class="contact-big-form fade-in">
           <h2 style="color:var(--warm-white);font-size:1.3rem;margin-bottom:1.5rem">Send os en besked</h2>
-          <form id="contactForm" novalidate>
+          <form id="contactForm" action="https://formspree.io/f/mlgynrpp" method="POST" novalidate>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
               <div class="form-group"><label for="cf-fname">Fornavn *</label><input id="cf-fname" name="fornavn" type="text" placeholder="Dit fornavn" required autocomplete="given-name"/></div>
               <div class="form-group"><label for="cf-lname">Efternavn *</label><input id="cf-lname" name="efternavn" type="text" placeholder="Dit efternavn" required autocomplete="family-name"/></div>
@@ -620,7 +620,7 @@ function genBooking() {
         <div>
           <div class="booking-form fade-in">
             <h3 style="color:var(--warm-white);margin-bottom:1.5rem">Bookingformular</h3>
-            <form id="bookingForm" novalidate>
+            <form id="bookingForm" action="https://formspree.io/f/mlgynrpp" method="POST" novalidate>
               <div class="form-grid">
                 <div class="form-group"><label for="bk-fname">Fornavn *</label><input id="bk-fname" name="fornavn" type="text" placeholder="Fornavn" required autocomplete="given-name"/></div>
                 <div class="form-group"><label for="bk-lname">Efternavn *</label><input id="bk-lname" name="efternavn" type="text" placeholder="Efternavn" required autocomplete="family-name"/></div>
