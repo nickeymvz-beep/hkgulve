@@ -692,5 +692,6 @@ module.exports = {
       "before": "images/galleri/rigshospitalets-patienthotel:case-006:01-before.jpg",
       "after": "images/galleri/rigshospitalets-patienthotel:case-006:01-after.jpg"
     }
-  ]
+  ],
+  "domain": "https://www.hkgulve.dk"
 };
