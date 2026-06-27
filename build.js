@@ -565,14 +565,14 @@ function genContact() {
           <h2 style="color:var(--warm-white);font-size:1.3rem;margin-bottom:1.5rem">Send os en besked</h2>
           <form id="contactForm" novalidate>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
-              <div class="form-group"><label for="cf-fname">Fornavn *</label><input id="cf-fname" type="text" placeholder="Dit fornavn" required autocomplete="given-name"/></div>
-              <div class="form-group"><label for="cf-lname">Efternavn *</label><input id="cf-lname" type="text" placeholder="Dit efternavn" required autocomplete="family-name"/></div>
-              <div class="form-group"><label for="cf-phone">Telefon</label><input id="cf-phone" type="tel" placeholder="${f.phoneDisplay}" autocomplete="tel"/></div>
-              <div class="form-group"><label for="cf-email">E-mail *</label><input id="cf-email" type="email" placeholder="din@email.dk" required autocomplete="email"/></div>
+              <div class="form-group"><label for="cf-fname">Fornavn *</label><input id="cf-fname" name="fornavn" type="text" placeholder="Dit fornavn" required autocomplete="given-name"/></div>
+              <div class="form-group"><label for="cf-lname">Efternavn *</label><input id="cf-lname" name="efternavn" type="text" placeholder="Dit efternavn" required autocomplete="family-name"/></div>
+              <div class="form-group"><label for="cf-phone">Telefon</label><input id="cf-phone" name="telefon" type="tel" placeholder="${f.phoneDisplay}" autocomplete="tel"/></div>
+              <div class="form-group"><label for="cf-email">E-mail *</label><input id="cf-email" name="email" type="email" placeholder="din@email.dk" required autocomplete="email"/></div>
             </div>
             <div class="form-group" style="margin-top:1rem">
               <label for="cf-subject">Emne</label>
-              <select id="cf-subject">
+              <select id="cf-subject" name="emne">
                 <option>Anmod om tilbud</option><option>Spørgsmål om behandlinger</option>
                 <option>Spørgsmål om priser</option><option>Book besigtigelse</option>
                 <option>Erhvervsforespørgsel</option><option>Andet</option>
@@ -580,7 +580,7 @@ function genContact() {
             </div>
             <div class="form-group" style="margin-top:1rem">
               <label for="cf-msg">Besked *</label>
-              <textarea id="cf-msg" placeholder="Beskriv din forespørgsel så detaljeret som muligt…" required></textarea>
+              <textarea id="cf-msg" name="besked" placeholder="Beskriv din forespørgsel så detaljeret som muligt…" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:1rem;margin-top:1.5rem">✉️ Send besked</button>
             <div class="success-msg" id="contactSuccess" role="alert">✅ Tak for din besked! Vi vender tilbage inden for 24 timer.</div>
@@ -622,26 +622,26 @@ function genBooking() {
             <h3 style="color:var(--warm-white);margin-bottom:1.5rem">Bookingformular</h3>
             <form id="bookingForm" novalidate>
               <div class="form-grid">
-                <div class="form-group"><label for="bk-fname">Fornavn *</label><input id="bk-fname" type="text" placeholder="Fornavn" required autocomplete="given-name"/></div>
-                <div class="form-group"><label for="bk-lname">Efternavn *</label><input id="bk-lname" type="text" placeholder="Efternavn" required autocomplete="family-name"/></div>
-                <div class="form-group"><label for="bk-phone">Telefon *</label><input id="bk-phone" type="tel" placeholder="${f.phoneDisplay}" required autocomplete="tel"/></div>
-                <div class="form-group"><label for="bk-email">E-mail *</label><input id="bk-email" type="email" placeholder="din@email.dk" required autocomplete="email"/></div>
-                <div class="form-group full"><label for="bk-addr">Adresse *</label><input id="bk-addr" type="text" placeholder="Vej, husnummer, by og postnummer" required autocomplete="street-address"/></div>
-                <div class="form-group"><label for="bk-areal">Areal (ca. m²)</label><input id="bk-areal" type="number" placeholder="80" min="1"/></div>
+                <div class="form-group"><label for="bk-fname">Fornavn *</label><input id="bk-fname" name="fornavn" type="text" placeholder="Fornavn" required autocomplete="given-name"/></div>
+                <div class="form-group"><label for="bk-lname">Efternavn *</label><input id="bk-lname" name="efternavn" type="text" placeholder="Efternavn" required autocomplete="family-name"/></div>
+                <div class="form-group"><label for="bk-phone">Telefon *</label><input id="bk-phone" name="telefon" type="tel" placeholder="${f.phoneDisplay}" required autocomplete="tel"/></div>
+                <div class="form-group"><label for="bk-email">E-mail *</label><input id="bk-email" name="email" type="email" placeholder="din@email.dk" required autocomplete="email"/></div>
+                <div class="form-group full"><label for="bk-addr">Adresse *</label><input id="bk-addr" name="adresse" type="text" placeholder="Vej, husnummer, by og postnummer" required autocomplete="street-address"/></div>
+                <div class="form-group"><label for="bk-areal">Areal (ca. m²)</label><input id="bk-areal" name="areal" type="number" placeholder="80" min="1"/></div>
                 <div class="form-group"><label for="bk-ydelse">Ønsket ydelse</label>
                   <select id="bk-ydelse">
                     ${site.services.map(s => `<option>${esc(s.title)}</option>`).join('')}
                     <option>Usikker – ønsker rådgivning</option>
                   </select>
                 </div>
-                <div class="form-group"><label for="bk-date">Ønsket dato</label><input id="bk-date" type="date"/></div>
+                <div class="form-group"><label for="bk-date">Ønsket dato</label><input id="bk-date" name="dato" type="date"/></div>
                 <div class="form-group"><label for="bk-time">Tidspunkt</label>
                   <select id="bk-time">
                     <option>Morgen (07–10)</option><option>Formiddag (10–12)</option>
                     <option>Eftermiddag (12–15)</option><option>Sidst på dagen (15–17)</option>
                   </select>
                 </div>
-                <div class="form-group full"><label for="bk-msg">Beskrivelse (valgfri)</label><textarea id="bk-msg" placeholder="Beskriv gulvets tilstand, særlige udfordringer…"></textarea></div>
+                <div class="form-group full"><label for="bk-msg">Beskrivelse (valgfri)</label><textarea id="bk-msg" name="besked" placeholder="Beskriv gulvets tilstand, særlige udfordringer…"></textarea></div>
               </div>
               <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:1rem;margin-top:1rem">📅 Send bookingforespørgsel</button>
               <div class="success-msg" id="bookingSuccess" role="alert">✅ Tak! Vi kontakter dig inden for 24 timer for at aftale besigtigelse.</div>
