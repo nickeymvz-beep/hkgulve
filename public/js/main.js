@@ -92,7 +92,6 @@ function submitBooking(e) {
 
 // ── CONTACT FORM ──────────────────────────────
 function submitContact(e) {
-  e && e.preventDefault();
   const form    = document.getElementById('contactForm');
   const success = document.getElementById('contactSuccess');
   if (!form) return;
